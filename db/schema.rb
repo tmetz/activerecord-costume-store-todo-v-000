@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 3) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "haunted_houses", force: :cascade do |t|
+  create_table "haunted_stores", force: :cascade do |t|
     t.string "name"
     t.string "location"
     t.string "theme"
@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 3) do
     t.boolean "family_friendly"
     t.datetime "opening_date"
     t.datetime "closing_date"
-    t.text "description"
+    t.text "long_description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
